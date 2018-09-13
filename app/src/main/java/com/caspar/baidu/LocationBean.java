@@ -5,24 +5,38 @@ package com.caspar.baidu;
  */
 
 public class LocationBean {
-    private int GroudId;
+    private int deviceId;
+    private int groupId;
     private double longitude;
     private double latitude;
     private String deviceName;
     private String locationName;
     private String groupDescribe;
+    private boolean isChecked;
 
     public LocationBean(double longitude, double latitude) {
         this.longitude = longitude;
         this.latitude = latitude;
     }
 
-    public int getGroudId() {
-        return GroudId;
+
+    public LocationBean(int deviceId, int groupId, double longitude, double latitude, String deviceName, String locationName, String groupDescribe, boolean isChecked) {
+        this.deviceId = deviceId;
+        this.groupId = groupId;
+        this.longitude = longitude;
+        this.latitude = latitude;
+        this.deviceName = deviceName;
+        this.locationName = locationName;
+        this.groupDescribe = groupDescribe;
+        this.isChecked = isChecked;
     }
 
-    public void setGroudId(int groudId) {
-        GroudId = groudId;
+    public int getGroudId() {
+        return groupId;
+    }
+
+    public void setGroudId(int groupId) {
+        groupId = groupId;
     }
 
     public double getLongitude() {
@@ -63,5 +77,13 @@ public class LocationBean {
 
     public void setGroupDescribe(String groupDescribe) {
         this.groupDescribe = groupDescribe;
+    }
+
+    public boolean isChecked() {
+        return isChecked;
+    }
+
+    public void setChecked(boolean checked) {
+        isChecked = checked;
     }
 }

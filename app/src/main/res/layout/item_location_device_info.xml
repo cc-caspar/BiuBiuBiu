@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_item_location_single_device"
+    android:layout_height="110dp"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+    <ImageView
+        android:id="@+id/iv_item__devices_photo"
+        android:background="@drawable/default_location_placeholder_figure"
+        android:layout_width="140dp"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/tv_item_device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/iv_item__devices_photo"
+        android:text="设备280"
+        android:layout_marginTop="10dp"
+        android:textColor="#222222"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_item_device_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_device_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/iv_item__devices_photo"
+        android:text="渝北220KV变电工程"
+        android:textColor="#222222" />
+
+    <ImageView
+        android:id="@+id/iv_item_device_checked"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/icon_choose"
+        android:visibility="gone"
+        />
+</RelativeLayout>
